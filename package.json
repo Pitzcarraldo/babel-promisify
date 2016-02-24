@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Converts callback-based functions to Babel or Native Promises",
   "main": "lib/promisify.js",
-  "author": "Mike Hall <mikehall314@gmail.com>",
+  "author": "Minkyu Cho <mrnoname@naver.com>",
   "contributors": [
-    "Minkyu Cho <mrnoname@naver.com>"
+    "Mike Hall <mikehall314@gmail.com>"
   ],
   "keywords": [
     "promises",

@@ -1,15 +1,20 @@
-[![Travis CI](https://travis-ci.org/digitaldesignlabs/es6-promisify.svg)](https://travis-ci.org/digitaldesignlabs/es6-promisify)
+# babel-promisify
 
-# es6-promisify
+[![Build Status](https://travis-ci.org/Pitzcarraldo/babel-promisify.svg)](https://travis-ci.org/Pitzcarraldo/babel-promisify)
+[![Coverage Status](https://coveralls.io/repos/github/Pitzcarraldo/babel-promisify/badge.svg?branch=master)](https://coveralls.io/github/Pitzcarraldo/babel-promisify?branch=master)
+[![npm version](https://img.shields.io/npm/v/babel-promisify.svg?style=flat-square)](https://www.npmjs.com/package/babel-promisify)
+[![npm downloads](https://img.shields.io/npm/dm/babel-promisify.svg?style=flat-square)](https://www.npmjs.com/package/babel-promisify)
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Pitzcarraldo/babel-promisify)
 
-Converts callback-based functions to Promise-based functions.
+
+Converts callback-based functions to Babel or Native Promises. This module is babel port of [es6-promisify](https://github.com/digitaldesignlabs/es6-promisify).
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/es6-promisify)
+Install with [npm](https://npmjs.org/package/babel-promisify)
 
 ```bash
-npm install --save es6-promisify
+npm install --save babel-promisify
 ```
 
 ## Example
@@ -18,7 +23,7 @@ npm install --save es6-promisify
 "use strict";
 
 // Declare variables
-var promisify = require("es6-promisify"),
+var promisify = require("babel-promisify"),
     fs = require("fs"),
 
 // Convert the stat function
@@ -37,7 +42,7 @@ stat("example.txt").then(function (stats) {
 "use strict";
 
 // Declare variables
-var promisify = require("es6-promisify"),
+var promisify = require("babel-promisify"),
     fs = require("fs"),
     stat;
 
@@ -62,7 +67,7 @@ stat("example.txt").then(function (stats) {
 "use strict";
 
 // Declare variables
-var promisify = require("es6-promisify"),
+var promisify = require("babel-promisify"),
     redis = require("redis").createClient(6379, "localhost"),
 
 // Create a promise-based version of send_command
@@ -79,9 +84,9 @@ client("ping", []).then(function (pong) {
 ```
 
 ### Tests
-Test with nodeunit
+Test with mocha & chai
 ```bash
 $ npm test
 ```
 
-Published under the [MIT License](http://opensource.org/licenses/MIT).
+Published under the [MIT License](LICENSE).
